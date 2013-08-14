@@ -30,6 +30,7 @@ header
 	color: white;
 	margin: 0;
 	padding: 0.5em;
+	position: relative;
 }
 header figure, header h1
 {
@@ -38,22 +39,26 @@ header figure, header h1
 }
 header h1
 {
+	display: block;
 	font-size: 20px;
 	font-weight: normal;
-	margin: 1em 0 0 1em;
-	width: 60%;
+	margin: 1em 85px 1em 100px;
+	text-align: center;
 }
 header #avatar
 {
 	float: right;
 	margin: 1em 1em 0 0;
+	position: absolute;
+	top: 0;
+	right: 0;
 }
 header #avatar figcaption
 {
 	background: #22BCE0;
-	float: right;
 	height: 50px;
 	line-height: 50px;
+	margin-left: 50px;
 }
 header #avatar figcaption:after
 {
@@ -64,23 +69,31 @@ header #avatar figcaption:after
 }
 header #avatar img
 {
+	border-radius: 10px 0 0 10px;
 	float: left;
 	width: 50px;
 }
+header #logo
+{
+	float: left;
+}
 header #logo img
 {
+	border-radius: 100px;
 	width: 80px;
 }
 nav
 {
 	background: #878787;
 	font-size: 0.9em;
+	position: relative;
 }
 nav ul
 {
 	list-style: none;
 	margin: 0;
 	padding: 0;
+	text-align: center;
 }
 nav ul li
 {
@@ -93,6 +106,7 @@ nav ul li a
 	color: white;
 	display: block;
 	padding: 0.5em 0;
+	text-decoration: none;
 }
 nav #flechita_nav a
 {
@@ -131,6 +145,10 @@ nav #publicar_nav a
 	padding: 0.5em 1em;
 	text-decoration: none;
 }
+#bienvenida
+{
+	display: none;
+}
 #contenido
 {
 	margin: 1em;
@@ -139,6 +157,7 @@ nav #publicar_nav a
 {
 	background: white;
 	border-bottom: 3px #22BCE0 solid;
+	border-radius: .5em .5em .5em 0;
 	margin-bottom: 3em;
 	min-height: 128px;
 	position: relative;
@@ -159,6 +178,7 @@ nav #publicar_nav a
 	color: white;
 	margin: 0 0 0 2em;
 	padding: 4px;
+	position: relative;
 	text-decoration: none;
 }
 #contenido .item .datos_item .guardar_item
@@ -188,6 +208,7 @@ nav #publicar_nav a
 }
 #contenido .item .imagen_item img
 {
+	border-radius: .5em 0 .5em 0;
 	width: 96px;
 }
 #contenido .item .titulo_item
